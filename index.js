@@ -30,22 +30,22 @@ function kitaSpalva(elementas, spalva) {
 }
 
 // desimtas div
-var pirmas = 8;
-var antras = 9;
+let pirmas1 = 8;
+let antras2 = 9;
 
-var suma = pirmas + antras;
-var skirtumas = pirmas - antras;
-var sandauga = pirmas * antras;
-var dalmuo = pirmas / antras;
+let suma = pirmas1 + antras2;
+let skirtumas = pirmas1 - antras2;
+let sandauga = pirmas1 * antras2;
+let dalmuo = pirmas1 / antras2;
 
-document.getElementById("suma").innerHTML = pirmas + " + " + antras + " = " + suma;
-document.getElementById("skirtumas").innerHTML = pirmas + " - " + antras + " = " + skirtumas;
-document.getElementById("sandauga").innerHTML = pirmas + " * " + antras + " = " + sandauga;
-document.getElementById("dalmuo").innerHTML = pirmas + " / " + antras + " = " + dalmuo;
+document.getElementById("suma").innerHTML = pirmas1 + " + " + antras2 + " = " + suma;
+document.getElementById("skirtumas").innerHTML = pirmas1 + " - " + antras2 + " = " + skirtumas;
+document.getElementById("sandauga").innerHTML = pirmas1 + " * " + antras2 + " = " + sandauga;
+document.getElementById("dalmuo").innerHTML = pirmas1 + " / " + antras2 + " = " + dalmuo;
 
 // vienuoliktas div
-var pirmas = 7;
-var antras = 5;
+let pirmas = 7;
+let antras = 5;
 
 let isvedimui = `<p>${pirmas} + ${antras} = ${pirmas + antras}</p>
                <p>${pirmas} - ${antras} = ${pirmas - antras}</p>
