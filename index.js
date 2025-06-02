@@ -100,3 +100,17 @@ function zodziuKiekis() {
     document.getElementById('penkiolikto-atsakymai').innerHTML = `<p>Žodžių kiekis: ${zodziuKiekisTextarea}</p>`;
 }
 
+function ilgiausiasZodis() {
+    let tekstas = document.getElementById('penkiolikto-tekstas').value;
+    let zodziai = tekstas.trim().split(' ');
+    let ilgiausias = '';
+
+    for (let zodis of zodziai) {
+        if (zodis.length > ilgiausias.length) {
+            ilgiausias = zodis;
+        }
+    }
+    document.getElementById('penkiolikto-atsakymai').innerHTML += `<p>Ilgiausias žodis: ${ilgiausias}</p>
+    <p>Jo ilgis: ${ilgiausias.length} simbolių.</p>`;
+}
+
