@@ -155,3 +155,9 @@ kitasPerjungtiMygtukas.onclick = function() {
         kitasPerjungtiTekstas.style.display = 'none';
     }
 }
+
+// devynioliktas div
+let devynioliktoTekstas = document.getElementById('devyniolikto-tekstas');
+devynioliktoTekstas.onclick = function() {
+    this.style.display = 'none';
+}
