@@ -1,5 +1,9 @@
 body {
-    background-color: bisque; /* Slightly changed color to match example */
+    background-color: bisque;
+}
+
+body > div {
+    background-color: white; 
     padding: 2em;
     margin: 5em;
 }
