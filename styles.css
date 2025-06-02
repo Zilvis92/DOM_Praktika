@@ -37,3 +37,12 @@ textarea {
     border: 1px solid #bebebe;
 }
 
+#sesioliktas .skirtukas {
+    border: 1px dotted gray;
+    padding: 1em;
+}
+
+#sesioliktas .skirtukas#antras-skirtukas {
+    display: none;;
+}
+
