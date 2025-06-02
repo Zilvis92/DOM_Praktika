@@ -46,3 +46,7 @@ textarea {
     display: none;;
 }
 
+#septynioliktas #perjungti-tekstas {
+    display: none; /* Initially hidden */
+}
+
