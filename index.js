@@ -54,3 +54,12 @@ let isvedimui = `<p>${pirmas} + ${antras} = ${pirmas + antras}</p>
 
 document.getElementById('vienuolikto-turinys').innerHTML = isvedimui;
 
+// dvyliktas div
+function keistiSpalva(elementas, spalva) {
+    document.getElementById(elementas).style.color = spalva;
+}
+
+function keistiDydi(elementas, dydis) {
+    document.getElementById(elementas).style.fontSize = dydis + 'px';
+}
+
