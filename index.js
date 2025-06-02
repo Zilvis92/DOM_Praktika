@@ -91,3 +91,12 @@ function pridetiZodi(elementas, zodis) {
     document.getElementById(elementas).value += zodis + ' ';
 }
 
+// penkioliktas div
+function zodziuKiekis() {
+    let tekstas = document.getElementById('penkiolikto-tekstas').value;
+    let zodziai = tekstas.trim().split(' ');
+    let zodziuKiekisTextarea = zodziai.filter(word => word.length > 0).length;
+
+    document.getElementById('penkiolikto-atsakymai').innerHTML = `<p>Žodžių kiekis: ${zodziuKiekisTextarea}</p>`;
+}
+
