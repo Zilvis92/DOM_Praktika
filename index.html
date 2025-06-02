@@ -118,6 +118,10 @@
                 <p>Tekstas per viduri:</p>
                 <input type="text" value="tekstas per viduri" id="tekstas-divui">
             </div>
+            <div class="parametras">
+               <p>Teksto spalva:</p>
+                <input type="color" value="#000000" id="teksto-spalvos-pasirinkimas"> 
+            </div>
             <div id="div-keitimui">
                 tekstas per viduri
             </div>
@@ -140,6 +144,7 @@
         <p>
             <button onclick="zodziuKiekis()">Zodziu kiekis</button>
             <button onclick="ilgiausiasZodis()">Ilgiausias zodis</button>
+            <button onclick="trumpiausiasZodis()">Trumpiausias zodis</button>
         </p>
         <p id="penkiolikto-atsakymai"></p>
     </div>
@@ -169,6 +174,42 @@
 
     <div id="devynioliktas">
         <p id="devyniolikto-tekstas">Slepti sita teksta ant paspaudimo</p>
+    </div>
+
+    <div id="papildoma-uzduotis-3">
+        <h2>Papildoma užduotis 3</h2>
+        <button onclick="styleLongParagraphs()">Spalvinti ilgus paragrafus</button>
+        <div id="text-blocks-container">
+            <p class="text-block">Trumpas tekstas.</p>
+            <p class="text-block">Tai yra ilgesnis tekstas, kuriame yra daugiau nei šimtas simbolių. Tikiuosi, kad šis tekstas bus pakankamai ilgas, kad galėčiau pamatyti jo stilių pakeistą, kai paspausiu mygtuką. Dar šiek tiek teksto, kad pasiekčiau limitą.</p>
+            <p class="text-block">Dar vienas trumpas tekstas.</p>
+            <p class="text-block">Šis tekstas taip pat bus ilgas. Mums reikia patikrinti ar stiliavimas veikia teisingai su keliais ilgais teksto blokais. Tai padės užtikrinti, kad funkcija yra universali ir tinkamai apdoroja visus atitinkamus elementus puslapyje, kurie atitinka nurodytas sąlygas. Tai yra puikus testas, kad įsitikintume, jog viskas veikia gerai. Dar šiek tiek teksto, kad pasiekčiau limitą.</p>
+            <p class="text-block">Dar vienas trumpas tekstas.</p>
+        </div>
+    </div>
+
+    <div id="papildoma-uzduotis-4">
+        <h2>Papildoma užduotis 4 - Skaičiavimai</h2>
+        <input type="number" id="skaicius1" placeholder="Įveskite skaičių 1">
+        <input type="number" id="skaicius2" placeholder="Įveskite skaičių 2">
+        <p>
+            <button onclick="atliktiSkaiciavimus()">Atlikti Skaičiavimus</button>
+        </p>
+        <div id="skaiciavimu-rezultatai"></div>
+    </div>
+
+    <div id="papildoma-uzduotis-5">
+        <h2>Papildoma užduotis 5 - Modalinis langas</h2>
+        <button onclick="toggleModal()">Atidaryti Modalą</button>
+    </div>
+
+    <!-- Modal structure -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="toggleModal()">×</span>
+            <p>Sveiki, tai yra modalinis langas!</p>
+            <button onclick="toggleModal()">Uždaryti Modalą</button>
+        </div>
     </div>
 
     <script src="index.js"></script>
