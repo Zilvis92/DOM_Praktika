@@ -86,3 +86,8 @@ tekstasDivui.oninput = function() {
     divKeitimui.innerHTML = this.value;
 }
 
+// keturioliktas div
+function pridetiZodi(elementas, zodis) {
+    document.getElementById(elementas).value += zodis + ' ';
+}
+
