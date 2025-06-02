@@ -141,3 +141,17 @@ perjungtiMygtukas.onclick = function() {
         perjungtiTekstas.style.display = "none";
     }
 }
+
+// astuonioliktas div
+let kitasPerjungtiMygtukas = document.getElementById('kitas-perjungti-mygtukas');
+let kitasPerjungtiTekstas = document.getElementById('kitas-perjungti-tekstas');
+
+kitasPerjungtiMygtukas.onclick = function() {
+    if (this.innerHTML === "Rodyti") {
+        this.innerHTML = "Nerodyti";
+        kitasPerjungtiTekstas.style.display = 'block';
+    } else {
+        this.innerHTML = "Rodyti";
+        kitasPerjungtiTekstas.style.display = 'none';
+    }
+}
